@@ -1,6 +1,7 @@
-import Navbar from "./components/Navbar";
-import Footer from "./components/Footer";
 import Card from "./components/Card";
+import Count from "./components/Count";
+import Footer from "./components/Footer";
+import Navbar from "./components/Navbar";
 import User from "./components/User";
 
 function App() {
@@ -15,6 +16,7 @@ function App() {
   return (
     <>
       <Navbar />
+      <Count />
       <div className="cards">
         <Card title="Card1" price="$ 123" />
         <Card title="Card2" price="$ 456" />
