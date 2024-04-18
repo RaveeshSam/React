@@ -1,6 +1,7 @@
 import { useState } from "react";
 import Card from "./components/Card";
 import Count from "./components/Count";
+import Counter from "./components/Counter";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
 import User from "./components/User";
@@ -19,16 +20,17 @@ const [state, setState] = useState(true)
 
   return (
     <>
-      <Navbar />
+      <Navbar /> <br />
+      <Counter /> <br />
       <button onClick={() => setState(!state)}>Toggle</button>
-      {state ? <Count /> : ""}
+      {state ? <Count /> : ""} <br />
       <div className="cards">
         <Card title="Card1" price="$ 123" />
         <Card title="Card2" price="$ 456" />
         <Card title="Card3" price="$ 789" />
-      </div>
-      <Api />
-      <User users={users} />
+      </div> <br />
+      <Api /> <br />
+      <User users={users} /> <br />
       <Footer />
     </>
   )
