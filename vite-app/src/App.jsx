@@ -8,19 +8,39 @@ import User from "./components/User";
 import Api from "./components/Api";
 
 function App() {
-  const users = [
-    { id:0, name:"James", age:35, },
-    { id:1, name:"Karim", age:26, },
-    { id:2, name:"Bruno", age:45, },
-    { id:3, name:"Mike", age:24, },
-    { id:4, name:"Bily", age:28, },
-  ];
+  // const users = [
+  //   { id:0, name:"James", age:35, },
+  //   { id:1, name:"Karim", age:26, },
+  //   { id:2, name:"Bruno", age:45, },
+  //   { id:3, name:"Mike", age:24, },
+  //   { id:4, name:"Bily", age:28, },
+  // ];
   
-const [state, setState] = useState(true)
+// const [state, setState] = useState(true)
+
+const handleClick = () => {
+  alert("Button is Clicked")
+}
+
+const handleMouseOver = () => {
+  alert("Mouse on Box")
+}
+
+const [name, setName] = useState("React")
+
+const handleChange = (e) => {
+  setName(e.target.value)
+}
 
   return (
     <>
       <Navbar /> <br />
+      <button onClick={handleClick}>Click Me</button> <br/>
+      <div className="box" onMouseOver={handleMouseOver}>
+        It is a Box
+      </div> <br />
+      <input type="text" value={name} onChange={handleChange} />
+      <p>{name}</p>
       {/* <Counter /> <br /> */}
       {/* {state && <Count />}
       <button onClick={() => setState(!state)}>Toggle</button> <br />
@@ -31,7 +51,7 @@ const [state, setState] = useState(true)
         <Card title="Card3" price="$ 789" />
       </div> <br /> */}
       {/* <Api /> <br /> */}
-      <User users={users} /> <br />
+      {/* <User users={users} /> <br /> */}
       <Footer />
     </>
   )

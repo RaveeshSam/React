@@ -6,3 +6,10 @@
 .cards {
     display: flex;
 }
+
+.box {
+    height: 100px;
+    width: 150px;
+    background-color: rgb(100, 100, 100);
+    color: white;
+}
