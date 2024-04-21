@@ -22,16 +22,16 @@ const [state, setState] = useState(true)
     <>
       <Navbar /> <br />
       {/* <Counter /> <br /> */}
-      {state && <Count />}
+      {/* {state && <Count />}
       <button onClick={() => setState(!state)}>Toggle</button> <br />
-      {state ? <Count /> : "Nothing to Display"} <br />
+      {state ? <Count /> : "Nothing to Display"} <br /> */}
       {/* <div className="cards">
         <Card title="Card1" price="$ 123" />
         <Card title="Card2" price="$ 456" />
         <Card title="Card3" price="$ 789" />
-      </div> <br />
-      <Api /> <br />
-      <User users={users} /> <br /> */}
+      </div> <br /> */}
+      {/* <Api /> <br /> */}
+      <User users={users} /> <br />
       <Footer />
     </>
   )

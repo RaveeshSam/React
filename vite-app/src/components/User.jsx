@@ -7,7 +7,7 @@ const User = (props) => {
   return (
     <div className='ucard'>
         {users.map((user) => (
-            <div className='users'>
+            <div key={user.id} className='users'>
                 <p>Name: {user.name}</p>
                 <p>Age: {user.age}</p>
             </div>
