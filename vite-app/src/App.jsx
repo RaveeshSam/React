@@ -8,6 +8,7 @@ import User from "./components/User";
 import Api from "./components/Api";
 import Component1 from "./components/Component1";
 import { counterContext } from "./context/counter"
+import Memo from "./components/Memo";
 
 function App() {
   // const users = [
@@ -34,15 +35,16 @@ function App() {
 //   setName(e.target.value)
 // }
 
-const [count, setCount] = useState(0)
+// const [count, setCount] = useState(0)
 
   return (
     <>
-      <counterContext.Provider value={{count, setCount}}>
+      {/* <counterContext.Provider value={{count, setCount}}> */}
       <Navbar /> <br />
-      <h1>{count}</h1>
-      <button onClick={() => {setCount((count) => count + 1)}}>Click Me</button><br />
-      <Component1 />
+      <Memo />
+      {/* <h1>{count}</h1> */}
+      {/* <button onClick={() => {setCount((count) => count + 1)}}>Click Me</button><br /> */}
+      {/* <Component1 /> */}
       {/* <button onClick={handleClick}>Click Me</button> <br/> */}
       {/* <div className="box" onMouseOver={handleMouseOver}>
         It is a Box
@@ -61,7 +63,7 @@ const [count, setCount] = useState(0)
       {/* <Api /> <br /> */}
       {/* <User users={users} /> <br /> */}
       <Footer />
-      </counterContext.Provider>
+      {/* </counterContext.Provider> */}
     </>
   )
 }
