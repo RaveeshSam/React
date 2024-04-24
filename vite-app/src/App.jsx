@@ -1,15 +1,15 @@
-import { useState, useCallback } from "react";
-import Card from "./components/Card";
-import Count from "./components/Count";
-import Counter from "./components/Counter";
+// import { useState, useCallback } from "react";
+// import Card from "./components/Card";
+// import Count from "./components/Count";
+// import Counter from "./components/Counter";
 import Footer from "./components/Footer";
 import Navbar from "./components/Navbar";
-import User from "./components/User";
-import Api from "./components/Api";
-import Component1 from "./components/Component1";
-import { counterContext } from "./context/counter"
-import Memo from "./components/Memo";
-import Callback from "./components/Callback";
+// import User from "./components/User";
+// import Api from "./components/Api";
+// import Component1 from "./components/Component1";
+// import { counterContext } from "./context/counter"
+// import Memo from "./components/Memo";
+// import Callback from "./components/Callback";
 
 function App() {
   // const users = [
@@ -36,23 +36,24 @@ function App() {
 //   setName(e.target.value)
 // }
 
-const [count, setCount] = useState(0)
-const [add, setAdd] = useState(0)
+// const [count, setCount] = useState(0)
+// const [add, setAdd] = useState(0)
 
-const calculate = useCallback(() => {
-  // Doing some calculations
-}, [add])
+// const calculate = useCallback(() => {
+//   // Doing some calculations
+// }, [add])
 
   return (
     <>
       {/* <counterContext.Provider value={{count, setCount}}> */}
       <Navbar /> <br />
+      <h1>Home</h1>
       {/* <Memo /> */}
-      <h1>{count}</h1>
-      <button onClick={() => {setCount((count) => count + 1)}}>Click Me</button><br />
-      <Callback calculate={calculate} />
-      <h1>{add}</h1>
-      <button onClick={() => {setAdd((add) => add + 1)}}>Addition</button>
+      {/* <h1>{count}</h1> */}
+      {/* <button onClick={() => {setCount((count) => count + 1)}}>Click Me</button><br /> */}
+      {/* <Callback calculate={calculate} /> */}
+      {/* <h1>{add}</h1> */}
+      {/* <button onClick={() => {setAdd((add) => add + 1)}}>Addition</button> */}
       {/* <Component1 /> */}
       {/* <button onClick={handleClick}>Click Me</button> <br/> */}
       {/* <div className="box" onMouseOver={handleMouseOver}>
