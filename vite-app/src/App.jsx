@@ -10,6 +10,7 @@ import Navbar from "./components/Navbar";
 // import { counterContext } from "./context/counter"
 // import Memo from "./components/Memo";
 // import Callback from "./components/Callback";
+import Form from "./components/Form";
 
 function App() {
   // const users = [
@@ -47,7 +48,8 @@ function App() {
     <>
       {/* <counterContext.Provider value={{count, setCount}}> */}
       <Navbar /> <br />
-      <h1>Home</h1>
+      <Form />
+      {/* <h1>Home</h1> */}
       {/* <Memo /> */}
       {/* <h1>{count}</h1> */}
       {/* <button onClick={() => {setCount((count) => count + 1)}}>Click Me</button><br /> */}

@@ -13,3 +13,42 @@
     background-color: rgb(100, 100, 100);
     color: white;
 }
+
+span {
+    color: red;
+    font-size: 12px;
+}
+
+form {
+    z-index: 1;
+    background: #FFFFFF;
+    max-width: 360px;
+    margin: 0 auto 50px;
+    padding: 20px;
+    text-align: center;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
+form input {
+    background: #f2f2f2;
+    width: 100%;
+    border: 0;
+    margin: 0 0 15px;
+    padding: 15px;
+    box-sizing: border-box;
+    font-size: 15px;
+}
+
+
+.submit {
+    text-transform: uppercase;
+    background: rgb(0, 213, 255);
+    width: 100%;
+    color: #FFFFFF;
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.submit:hover {
+    background: rgb(0, 188, 226);
+ }
