@@ -1,7 +1,10 @@
 import React, { useEffect, useState } from 'react'
+import {add} from '../Redux/cartSlice'
+import { useDispatch } from 'react-redux'
 
 const Home = () => {
     const [product, setProduct] = useState([])
+    const dispatch = useDispatch()
 
     useEffect(() => {
       const fetchProduct = async () => {
@@ -12,6 +15,9 @@ const Home = () => {
       fetchProduct()
     }, [])
     
+    const handleAdd = (product) => {
+      dispatch(add(product))
+    }
 
   return (
     <div className='productWrapper'>
@@ -21,7 +27,7 @@ const Home = () => {
                     <img src={product.image} alt="" />
                     <h4>{product.title}</h4>
                     <h5>{product.price}</h5>
-                    <button className='btn'>Add to Cart</button>
+                    <button className='btn' onClick={() => handleAdd(product)}>Add to Cart</button>
                 </div>
             ))
         }
