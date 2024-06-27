@@ -30,6 +30,10 @@ img {
   border-radius: 10px;
 }
 
+.card:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
 .btn {
   background-color: aqua;
   border: none;
@@ -60,6 +64,10 @@ img {
   border-radius: 5px;
 }
 
+.cart:hover {
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
+}
+
 .rbtn {
   border: none;
   outline: none;
@@ -73,4 +81,5 @@ img {
 
 .rbtn:hover {
   background-color: #fb4d64;
+  box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
 }

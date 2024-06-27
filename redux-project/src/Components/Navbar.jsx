@@ -10,7 +10,7 @@ const Navbar = () => {
         <span style={{fontWeight:"bold"}}>Redux Tutorial</span>
         <div>
             <Link className='navLink' to={'/'}>Home</Link>
-            <Link className='navLink' to={'/cart'}>Cart</Link>
+            <Link className='navLink' to={'/cart'}><i className='fa-solid fa-cart-shopping'></i></Link>
             <span className='navLink'>Items: {items.length}</span>
         </div>
     </div>
